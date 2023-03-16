@@ -4,13 +4,7 @@
     box-sizing: border-box;
 }
 
-h1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-	
 summary::marker {
   content:  "🎵"; 
   color: #8b0707;
@@ -21,7 +15,11 @@ details[open] summary::marker {
   color: red;
 }
 
-
+.kopf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .umhuellung {
     display: flex;
     flex-wrap: wrap;
@@ -49,4 +47,32 @@ details[open] summary::marker {
     border-bottom: 10px #8b0707;
     padding: 10px 40px 10px 20px;
     position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .kopf {
+        font-size: 1.5em;
+    }
+    .huelle {
+        width: 90%;
+    }
+    .img {
+        width: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    img {
+        width: 50%;
+    }
+    .kopf {
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 300px) {
+    img {
+        width: 30%;
+    }
+    .kopf {
+        font-size: 1.3em;
+    }
 }
